@@ -1,6 +1,6 @@
 // 项目创建完成后输出信息
 exports.run ={
-  "yarn test":"Start to test the project"
+  "yarn":"Start to install dependencies for the project"
 };
 // 项目创建过程中的prompts
 // 参考:https://github.com/SBoudrias/Inquirer.js/blob/master/README.md
