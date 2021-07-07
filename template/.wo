@@ -1,0 +1,8 @@
+#
+TYPE=ae
+
+# branch
+BRANCH=<%= branch%>
+
+#
+SRC_PAGES=pages/

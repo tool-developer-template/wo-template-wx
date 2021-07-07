@@ -1,0 +1,15 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "dependencies": {
+    "@tool-developer/wx-app": "^0.0.1",
+    "@tool-developer/wx-async": "^0.0.1",
+    "@tool-developer/wx-md5": "^0.0.1",
+    "@tool-developer/wx-request": "^0.0.1",
+    "@tool-developer/wx-storage": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tool-developer/wx-unit": "^0.0.1"
+  }
+}

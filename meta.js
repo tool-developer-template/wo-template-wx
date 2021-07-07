@@ -12,5 +12,9 @@ exports.prompts = {
   "description": {
       "name": "description",
       "message": "What's your project description?"
+  },
+  "appid":{
+    "message":"What's your miniprogram appid?",
+    "default":""
   }
 }
