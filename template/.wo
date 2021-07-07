@@ -1,5 +1,5 @@
 #
-TYPE=ae
+TYPE=wx
 
 # branch
 BRANCH=<%= branch%>
