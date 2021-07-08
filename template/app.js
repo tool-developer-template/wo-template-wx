@@ -1,5 +1,10 @@
 // app.js
 import wxapp from '@tool-developer/wx-app';
+
+// 底部导航列表
+wxapp.TabBarList = [
+  //
+];
 //
 const options = wxapp.extend(
   wxapp,{
