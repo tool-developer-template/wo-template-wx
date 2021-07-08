@@ -1,4 +1,4 @@
-import behaviors from "@tool-developer/wx-app"
+import behaviors from "@tool-developer/wx-app/behaviors"
 const component = {
   options:{},
   behaviors:[behaviors],
