@@ -6,3 +6,5 @@ BRANCH=<%= branch%>
 
 #
 SRC_PAGES=pages/
+#
+COMPONENT=components/
