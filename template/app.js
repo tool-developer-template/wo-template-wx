@@ -1,6 +1,9 @@
 // app.js
 import wxapp from '@tool-developer/wx-app';
 
+// 兼容处理
+//global.wx = tt;
+
 // 底部导航列表
 wxapp.TabBarList = [
   //
