@@ -1,5 +1,6 @@
 // app.js
 import wxapp from '@tool-developer/wx-app';
+import defapp from './defapp';
 
 // 兼容处理
 //global.wx = tt;
@@ -8,6 +9,8 @@ import wxapp from '@tool-developer/wx-app';
 wxapp.TabBarList = [
   //
 ];
+// 自定义扩展
+Object.assign(wxapp,defapp)
 //
 const options = wxapp.extend(
   wxapp,{

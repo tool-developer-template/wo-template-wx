@@ -2,6 +2,16 @@ import behaviors from "@tool-developer/wx-app/behaviors"
 const component = {
   options:{},
   behaviors:[behaviors],
+  properties:{
+    data:{
+      type:Array,
+      value:[]
+    }
+  },
+  //
+  events:{
+
+  },
   methods:{
     //
   },

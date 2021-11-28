@@ -5,6 +5,6 @@ TYPE=wx
 BRANCH=<%= branch%>
 
 #
-SRC_PAGES=pages/
+SRC_PAGES=src/pages/
 #
-COMPONENT=components/
+COMPONENT=src/components/

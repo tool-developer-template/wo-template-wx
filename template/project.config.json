@@ -32,8 +32,11 @@
     },
     "useIsolateContext": true,
     "userConfirmedBundleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
+    "packNpmManually": true,
+    "packNpmRelationList": [{
+      "packageJsonPath": "./package.json",
+      "miniprogramNpmDistDir": "./dist/"
+    }],
     "minifyWXSS": true,
     "showES6CompileOption": false
   },
@@ -41,6 +44,7 @@
   "libVersion": "2.18.0",
   "appid": "<%= appid %>",
   "projectname": "<%= name %>",
+  "miniprogramRoot":"./dist",
   "debugOptions": {
     "hidedInDevtools": []
   },
