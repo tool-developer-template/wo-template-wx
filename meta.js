@@ -1,5 +1,6 @@
 // 项目创建完成后输出信息
 exports.run ={
+  "yarn": "Start to install dependencies for the project",
   "yarn dev":"Start to the development project",
   "yarn build":"Start to the production project"
 };
