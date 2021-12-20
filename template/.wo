@@ -8,3 +8,5 @@ BRANCH=<%= branch%>
 SRC_PAGES=src/pages/
 #
 COMPONENT=src/components/
+#
+CLOUD=cloudfunctions/

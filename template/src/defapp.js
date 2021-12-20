@@ -1,3 +1,5 @@
+import storage from '@tool-developer/wx-storage';
+import {CLOUD_STORAGE_SETTING} from './config/base'
 /**
  * 自定义扩展，会覆盖基础扩展
  */
@@ -8,8 +10,22 @@ export default {
     //
     return next(e);
   },
-  // 云函数调用
-  cc({name,data = {},config = {}}){
+  /**
+   * 
+   * @param {name}
+   * @param {data}
+   * @param {config}
+   * @param {expired} 存储过期时间,0为不存储，-1为永久存储
+   * @returns 
+   */
+  cc({name,data = {},config = {},expired}){
+    //
+    const key = [CLOUD_STORAGE_SETTING.key,name,data.type].join(':');
+    const ct = storage.get(key);
+    if(ct){
+      //
+      return Promise.resolve(ct);
+    }
     //
     this.showLoading();
     //
@@ -23,6 +39,13 @@ export default {
     }).then((resp)=>{
       //
       this.hideLoading();
+      // 缓存
+      if(expired){
+        //
+        expired = typeof expired === 'number' ? expired : CLOUD_STORAGE_SETTING.expired;
+        //
+        storage.set(key,resp.result,expired)
+      }
       //
       return resp.result;
     }).catch(()=>{
