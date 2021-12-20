@@ -8,6 +8,28 @@ export default {
     //
     return next(e);
   },
+  // 云函数调用
+  cc({name,data = {},config = {}}){
+    //
+    this.showLoading();
+    //
+    return wx.cloud.callFunction({
+      name,
+      config: {
+        ...(config || {}),
+        env: this.envId,// 这里直接没有注入到data上
+      },
+      data
+    }).then((resp)=>{
+      //
+      this.hideLoading();
+      //
+      return resp.result;
+    }).catch(()=>{
+      //
+      this.hideLoading();
+    })
+  },
   // 页面使用onPageShow
   onShow(options) {
     //
@@ -17,6 +39,7 @@ export default {
   // 页面使用onPageLoad
   onLoad(options){
     //
+    this.envId = options.envId;
     //
     this.onPageLoad && this.onPageLoad(options);
   },

@@ -45,6 +45,7 @@
   "appid": "<%= appid %>",
   "projectname": "<%= name %>",
   "miniprogramRoot":"./dist",
+  "cloudfunctionRoot": "cloudfunctions/",
   "debugOptions": {
     "hidedInDevtools": []
   },
