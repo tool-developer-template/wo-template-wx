@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "<%= description %>",
   "dependencies": {
-    "@tool-developer/wx-app": "^0.0.6-canary.1",
-    "@tool-developer/wx-async": "^0.0.6-canary.1",
-    "@tool-developer/wx-md5": "^0.0.6-canary.1",
-    "@tool-developer/wx-request": "^0.0.6-canary.1",
-    "@tool-developer/wx-storage": "^0.0.6-canary.1"
+    "@tool-developer/wx-app": "^0.0.6-canary.5",
+    "@tool-developer/wx-async": "^0.0.6-canary.5",
+    "@tool-developer/wx-md5": "^0.0.6-canary.5",
+    "@tool-developer/wx-request": "^0.0.6-canary.5",
+    "@tool-developer/wx-storage": "^0.0.6-canary.5"
   },
   "scripts": {
     "start": "npm run dev",

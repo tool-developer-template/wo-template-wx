@@ -7,7 +7,7 @@ const page = app.extend(app.App,{
   events:{
     //
   },
-  onLoad() {
+  onPageLoad() {
     //
   }
 })

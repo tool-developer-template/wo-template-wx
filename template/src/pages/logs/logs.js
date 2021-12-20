@@ -5,7 +5,7 @@ Page({
   data: {
     logs: []
   },
-  onLoad() {
+  onPageLoad() {
     this.setData({
       logs: (wx.getStorageSync('logs') || []).map(log => {
         return {

@@ -20,7 +20,7 @@ const page = app.extend(app.App,{
       url: '../logs/logs'
     })
   },
-  onLoad() {
+  onPageLoad() {
     if (wx.getUserProfile) {
       this.setData({
         canIUseGetUserProfile: true

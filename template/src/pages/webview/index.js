@@ -29,7 +29,7 @@ const page = app.extend(app.App, {
   toMessage() {
     //
   },
-  onLoad(options) {
+  onPageLoad(options) {
     //
     const url  = decodeURIComponent(options.to);
     //

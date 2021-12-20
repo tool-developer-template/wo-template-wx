@@ -1,8 +1,17 @@
 import behaviors from "@tool-developer/wx-app/behaviors"
+//import touchevent from "@tool-developer/wx-app/touchevent"
+//
 const component = {
-  options:{},
+  options:{
+    //multipleSlots:true
+  },
   behaviors:[behaviors],
   properties:{
+    // 扩展样式
+    extClass:{
+      type:String,
+      value:""
+    },
     data:{
       type:Array,
       value:[]
@@ -10,11 +19,14 @@ const component = {
   },
   //
   events:{
-
+    //'tap #event-id':'toEvent'
   },
   methods:{
     //
   },
+  /*observers:{
+
+  },*/
   lifetimes:{
     // 组件实例刚刚被创建时执行
     /*created(){

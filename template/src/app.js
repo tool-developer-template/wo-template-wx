@@ -15,6 +15,9 @@ Object.assign(wxapp,defapp)
 const options = wxapp.extend(
   wxapp,{
     App:wxapp,// 提供给子页面，直接通过app.App获取
+    globalData: {
+      userInfo: null
+    },
     onLaunch() {
       // 展示本地存储能力
       const logs = wx.getStorageSync('logs') || []
@@ -26,9 +29,6 @@ const options = wxapp.extend(
           // 发送 res.code 到后台换取 openId, sessionKey, unionId
         }
       })
-    },
-    globalData: {
-      userInfo: null
     }
   }
 )
