@@ -12,7 +12,7 @@ const page = app.extend(app.App,{
   getOpenId(){
     // wx.cloud.callFunction
     this.cc({
-      name: 'quickstartFunctions',
+      name: 'db',
       data: {
         type: 'getOpenId'
       }
