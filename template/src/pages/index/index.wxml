@@ -1,6 +1,5 @@
-<view>
-  <view class="top_tip">无需维护鉴权机制及登录票据，仅一行代码即可获得。</view>
-  <view class="box_text">{{ openId ? openId : 'OpenID将展示在这里' }}</view>
-  <view class="button" bindtap="bindEvent" data-eventid="openid" wx:if="{{!haveGetOpenId}}">获取OpenId</view>
-  <view class="button_clear" bindtap="bindEvent" data-eventid="clear" wx:if="{{haveGetOpenId}}">清空</view>
+<view class="wp">
+  <view>
+
+  </view>
 </view>
